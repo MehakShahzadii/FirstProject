@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:backgroundTint="@color/backgroundopc"
+    android:backgroundTintMode="src_over"
+    android:fadeScrollbars="true"
+    android:focusable="auto"
+    android:isScrollContainer="true"
+    android:padding="40dp"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:contentDescription="@string/logo"
+
+        />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="16dp"
+        android:text="@string/signin"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:hint="@string/EnterName"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="@dimen/textview_size"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtFirstName"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:hint="@string/Enteremail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textSize="@dimen/textview_size"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:hint="@string/EnterPassword"
+        android:inputType="textPassword|numberPassword"
+        android:minHeight="48dp"
+        android:textSize="@dimen/textview_size"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/edit_round"
+        android:backgroundTint="@color/bluelogin"
+        android:text="@string/Login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textview_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>
