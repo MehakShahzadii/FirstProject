@@ -9,6 +9,13 @@
     <string name="EnterName">Enter Name</string>
     <string name="imgFromCamera">Camera</string>
     <string name="imgFromGallery">Gallery</string>
+    <string name="text_username">UserName</string>
+    <string name="edttext_name">Enter Your Name</string>
+    <string name="text_email">Email</string>
+    <string name="edttxt_email">Enter Your Email</string>
+    <string name="password">PassWord</string>
+    <string name="edttxt_password">Enter Your Password</string>
+    <string name="info_page">Your Information</string>
 
 
 </resources>

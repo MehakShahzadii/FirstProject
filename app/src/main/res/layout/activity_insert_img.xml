@@ -5,19 +5,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".insert_img"
+    android:layout_marginTop="50dp"
     android:padding="30dp">
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_username"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/namedisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+
+        android:layout_toEndOf="@id/Name"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_email"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/Name"
+        android:layout_margin="@dimen/margin"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/emaildisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/margin"
+        android:layout_below="@id/namedisplay"
+        android:layout_toEndOf="@id/Email"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/Email"
+        android:layout_margin="@dimen/margin"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/passworddisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/margin"
+        android:layout_below="@id/emaildisplay"
+        android:layout_toEndOf="@id/password"
+        tools:ignore="SpUsage" />
     <Button
         android:id="@+id/Camerabtn"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/password"
         android:text="@string/imgFromCamera"
         />
     <Button
         android:id="@+id/Gallerybtn"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/password"
       android:layout_alignParentEnd="true"
         android:text="@string/imgFromGallery"
 

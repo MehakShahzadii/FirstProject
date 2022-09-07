@@ -56,7 +56,7 @@ class MainActivity: AppCompatActivity() {
         if (!isValidString(email)) {
             edtEmail.error="Email is inValid"
     }
-        MoveToinsert_imgid(email)
+
  }
 
     private fun validateFormpass(password: String) {
@@ -92,14 +92,17 @@ class MainActivity: AppCompatActivity() {
 
 }
 
-    private fun MoveToinsert_imgid(email: String) {
-        val i= Intent(this,MainActivity::class.java)
+    private fun moveToinsert_img(username: String, useremail: String, userpassword: String, userage: String) {
+        val i=Intent(this,insert_img::class.java)
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-        i.putExtra("UserEmail",email)
-        i.putExtra("userName",edtFirstName.text.toString())
+        i.putExtra("Name",username)
+        i.putExtra("email",useremail)
+        i.putExtra("Password",userpassword)
+
         startActivity(i)
     }
 }
+
 
 
 
